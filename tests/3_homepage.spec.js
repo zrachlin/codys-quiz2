@@ -105,7 +105,7 @@ describe('Homepage', () => {
       const lucaProfile = {
         name: 'Luca',
         age: 5,
-        description: 'Me favorite thing\'s a hug!'
+        description: 'Me favorite things a hug!'
       };
 
       const lucasFavoriteFood = [{ name: 'Roast chicken', id: 7 }]
