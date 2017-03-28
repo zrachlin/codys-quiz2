@@ -22,7 +22,7 @@ describe('Profile', () => {
   describe('should render the pug profile props it receives', () => {
 
     let pugProfile;
-    let HomepageWrapper;
+    let ProfileWrapper;
 
     beforeEach('create <Profile /> wrapper', () => {
 
@@ -49,24 +49,24 @@ describe('Profile', () => {
       //  2. It also only causes this 'virtual render' to happen for the component we pass in.
       //     If our component were to render other child components (not just elements, like div and span),
       //     their render methods will not be invoked. This makes sure that we only test one component at a time!
-      HomepageWrapper = shallow(<Profile profile={pugProfile}/>);
+      ProfileWrapper = shallow(<Profile profile={pugProfile}/>);
     });
 
     xit('includes the pug name as a header', () => {
 
-      expect(HomepageWrapper.find('h1')).to.have.html('<h1>Profile for Cody</h1>');
+      expect(ProfileWrapper.find('h1')).to.have.html('<h1>Profile for Cody</h1>');
 
     });
 
     xit('includes the pug age as a header', () => {
 
-      expect(HomepageWrapper.find('p')).to.have.html('<p>Age: 6</p>');
+      expect(ProfileWrapper.find('p')).to.have.html('<p>Age: 6</p>');
 
     });
 
     xit('includes the pug description as a div', () => {
 
-      expect(HomepageWrapper.find('.desc')).to.have.html('<div class="desc">Cody is a loveable pug!</div>');
+      expect(ProfileWrapper.find('.desc')).to.have.html('<div class="desc">Cody is a loveable pug!</div>');
 
     });
 
@@ -80,10 +80,10 @@ describe('Profile', () => {
         description: 'I am a celebrity pug!'
       };
 
-      HomepageWrapper = shallow(<Profile profile={pugProfile}/>);
-      expect(HomepageWrapper.find('h1')).to.have.html('<h1>Profile for Doug</h1>');
-      expect(HomepageWrapper.find('p')).to.have.html('<p>Age: 6</p>');
-      expect(HomepageWrapper.find('.desc')).to.have.html('<div class="desc">I am a celebrity pug!</div>');
+      ProfileWrapper = shallow(<Profile profile={pugProfile}/>);
+      expect(ProfileWrapper.find('h1')).to.have.html('<h1>Profile for Doug</h1>');
+      expect(ProfileWrapper.find('p')).to.have.html('<p>Age: 6</p>');
+      expect(ProfileWrapper.find('.desc')).to.have.html('<div class="desc">I am a celebrity pug!</div>');
 
     })
 
