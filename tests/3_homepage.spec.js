@@ -14,7 +14,7 @@ import FavoriteFoods from '../react/FavoriteFoods';
 // The Homepage component should render my FavoriteFoods and my Profile!
 describe('Homepage', () => {
 
-  let HomepageWrapper ;
+  let HomepageWrapper;
 
   beforeEach('create <Homepage /> wrapper', () => {
 
