@@ -82,7 +82,7 @@ describe('Profile', () => {
 
       ProfileWrapper = shallow(<Profile profile={pugProfile}/>);
       expect(ProfileWrapper.find('h1')).to.have.html('<h1>Profile for Doug</h1>');
-      expect(ProfileWrapper.find('p')).to.have.html('<p>Age: 6</p>');
+      expect(ProfileWrapper.find('p')).to.have.html('<p>Age: 4</p>');
       expect(ProfileWrapper.find('.desc')).to.have.html('<div class="desc">I am a celebrity pug!</div>');
 
     })
