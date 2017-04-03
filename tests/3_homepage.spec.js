@@ -84,9 +84,9 @@ describe('Homepage', () => {
       const ProfileWrapper = HomepageWrapper.find(Profile);
 
       // ProfileWrapper.props() ... returns an object of the props that have been passed to it
-      expect(ProfileWrapper.props().profile.name).to.be.equal('Cody')
-      expect(ProfileWrapper.props().profile.age).to.be.equal('6')
-      expect(ProfileWrapper.props().profile.description).to.be.equal('Cody is a loveable pug!')
+      expect(ProfileWrapper.props().profile.name).to.be.equal('Cody');
+      expect(ProfileWrapper.props().profile.age).to.be.equal('6');
+      expect(ProfileWrapper.props().profile.description).to.be.equal('Cody is a loveable pug!');
 
     });
 
@@ -108,7 +108,7 @@ describe('Homepage', () => {
         description: 'Me favorite things a hug!'
       };
 
-      const lucasFavoriteFood = [{ name: 'Roast chicken', id: 7 }]
+      const lucasFavoriteFood = [{ name: 'Roast chicken', id: 7 }];
 
       HomepageWrapper.setState({
         pugProfile: lucaProfile,

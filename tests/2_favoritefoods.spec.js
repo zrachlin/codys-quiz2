@@ -94,9 +94,9 @@ describe('FavoriteFoods', () => {
       expect(FavoriteFoodsWrapper.contains(<li>Pudding</li>)).to.be.equal(true);
       expect(FavoriteFoodsWrapper.contains(<li>Porkchops</li>)).to.be.equal(true);
 
-      expect(FavoriteFoodsWrapper.find('li').at(0).key()).to.equal("4");
-      expect(FavoriteFoodsWrapper.find('li').at(1).key()).to.equal("5");
-      expect(FavoriteFoodsWrapper.find('li').at(2).key()).to.equal("6");
+      expect(FavoriteFoodsWrapper.find('li').at(0).key()).to.equal('4');
+      expect(FavoriteFoodsWrapper.find('li').at(1).key()).to.equal('5');
+      expect(FavoriteFoodsWrapper.find('li').at(2).key()).to.equal('6');
 
     });
 

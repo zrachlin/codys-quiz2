@@ -85,7 +85,7 @@ describe('Profile', () => {
       expect(ProfileWrapper.find('p')).to.have.html('<p>Age: 4</p>');
       expect(ProfileWrapper.find('.desc')).to.have.html('<div class="desc">I am a celebrity pug!</div>');
 
-    })
+    });
 
   }); // end describe should render the pug profile props it receives
 
