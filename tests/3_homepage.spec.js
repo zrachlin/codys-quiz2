@@ -90,7 +90,7 @@ describe('Homepage', () => {
 
     });
 
-    xit('passes favoriteFoods from state to FavoriteFoods as a prop called food', () => {
+    xit('passes favoriteFoods from state to FavoriteFoods as a prop called foods', () => {
 
       HomepageWrapper.setState({ favoriteFoods: foods });
 
