@@ -83,7 +83,7 @@ describe('Homepage', () => {
       //// and returns a ProfileWrapper
       const ProfileWrapper = HomepageWrapper.find(Profile);
 
-      // ProfileWrapper.props() ... returns an object of the props that have been passed to it
+      // ProfileWrapper.props() ... returns the props that have been passed to the component
       expect(ProfileWrapper.props().profile.name).to.be.equal('Cody');
       expect(ProfileWrapper.props().profile.age).to.be.equal('6');
       expect(ProfileWrapper.props().profile.description).to.be.equal('Cody is a loveable pug!');
