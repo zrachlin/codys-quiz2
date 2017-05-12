@@ -39,7 +39,7 @@ describe('FavoriteFoods', () => {
 
     xit('renders a list of <li> for each food (3 total)', () => {
 
-      // We should find three li elements when <FavoriteFoods foos={foods} /> renders!
+      // We should find three li elements when <FavoriteFoods foods={foods} /> renders!
       expect(FavoriteFoodsWrapper.find('li')).to.have.length(3);
 
     });
