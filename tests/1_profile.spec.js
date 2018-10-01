@@ -52,25 +52,25 @@ describe('Profile', () => {
       ProfileWrapper = shallow(<Profile profile={pugProfile}/>);
     });
 
-    xit('includes the pug name as a header', () => {
+    it('includes the pug name as a header', () => {
 
       expect(ProfileWrapper.find('h1')).to.have.html('<h1>Profile for Cody</h1>');
 
     });
 
-    xit('includes the pug age as a header', () => {
+    it('includes the pug age as a header', () => {
 
       expect(ProfileWrapper.find('p')).to.have.html('<p>Age: 6</p>');
 
     });
 
-    xit('includes the pug description as a div', () => {
+    it('includes the pug description as a div', () => {
 
       expect(ProfileWrapper.find('.desc')).to.have.html('<div class="desc">Cody is a loveable pug!</div>');
 
     });
 
-    xit('changes if a different pug profile is passed in as props', () => {
+    it('changes if a different pug profile is passed in as props', () => {
 
       // Another pug?!? Wait, is that...Doug?! From the internet?!? Of course he can have a profile!
       // Make sure the Profile component accomodates him too!

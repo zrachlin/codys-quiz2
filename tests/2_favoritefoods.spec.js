@@ -37,21 +37,21 @@ describe('FavoriteFoods', () => {
       FavoriteFoodsWrapper = shallow(<FavoriteFoods foods={foods}/>);
     });
 
-    xit('renders a list of <li> for each food (3 total)', () => {
+    it('renders a list of <li> for each food (3 total)', () => {
 
       // We should find three li elements when <FavoriteFoods foods={foods} /> renders!
       expect(FavoriteFoodsWrapper.find('li')).to.have.length(3);
 
     });
 
-    xit('renders a list of <li> within the <ul>', () => {
+    it('renders a list of <li> within the <ul>', () => {
 
       // Also, we should find these three li elements within a ul element!
       expect(FavoriteFoodsWrapper.find('ul').find('li')).to.have.length(3);
 
     });
 
-    xit('renders each <li> with the name of each food', () => {
+    it('renders each <li> with the name of each food', () => {
 
       expect(FavoriteFoodsWrapper.contains(<li>Pizza</li>)).to.be.equal(true);
       expect(FavoriteFoodsWrapper.contains(<li>Peanut Butter</li>)).to.be.equal(true);
@@ -59,7 +59,7 @@ describe('FavoriteFoods', () => {
 
     });
 
-    xit('each <li> contains a `key` prop equal to the food\'s id', () => {
+    it('each <li> contains a `key` prop equal to the food\'s id', () => {
 
       expect(FavoriteFoodsWrapper.find('li').at(0).key()).to.equal("1");
       expect(FavoriteFoodsWrapper.find('li').at(1).key()).to.equal("2");
@@ -67,7 +67,7 @@ describe('FavoriteFoods', () => {
 
     });
 
-    xit('changes if a different set of food is sent down as props', () => {
+    it('changes if a different set of food is sent down as props', () => {
 
       // Wait, I changed my mind! These are my favoritest foods!
       // Make sure we can show these, too!

@@ -2,14 +2,14 @@ import React from 'react';
 
 export default class Profile extends React.Component {
 
-  render () {
-
+  render() {
+    const { name, age, description } = this.props.profile
     return (
 
       <div>
-        <h1></h1>
-        <p></p>
-        <div className="desc"></div>
+        <h1>Profile for {name}</h1>
+        <p>Age: {age}</p>
+        <div className="desc">{description}</div>
       </div>
 
     );
